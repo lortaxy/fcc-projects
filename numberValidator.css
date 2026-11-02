@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  padding: 7px 15px;
+  font-size: 12px;
+  font-family: 'Calibri';
+}
+
+#user-input {
+  width: 300px;
+  text-align: center;
+}

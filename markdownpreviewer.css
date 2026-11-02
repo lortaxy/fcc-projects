@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: lightcyan;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: white;
+}
+
+blockquote {
+  border-left: 4px solid #ccc;
+  background-color: white;
+  padding: 10px 20px;
+  margin: 1em 0;
+  font-style: italic;
+  color: #555;
+}
+
+pre code {
+  display: block;
+  background-color: white;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+#preview img {
+  max-width: 100px;
+  margin: 1em auto;
+  display: block;
+}

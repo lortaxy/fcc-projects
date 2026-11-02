@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="surveyForm.css">
+  </head>
+  <body>
+    <h1 id="title"> freeCodeCamp Survey Form </h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform </p>
+    <form id="survey-form">
+      <label id="name-label"> Name
+      <input id="name" type="text" required placeholder="Enter your name">
+      </label>
+      <label id="email-label"> Email
+      <input id="email" type="email" required
+      placeholder="Enter your Email">
+      </label>
+      <label id="number-label"> Age (optional)
+      <input id="number" min="13" max="100" type="number" placeholder="Age">
+      </label>
+      <div class="question"> Which option best describes your current role? </div>
+      <select id="dropdown">
+        <option> Select current role </option>
+        <option> Student </option>
+        <option> Full Time Job </option>
+        <option> Full Time Learner </option>
+        <option> Prefer not to say </option>
+        <option> Other </option>
+        </select>
+        <div class="question"> Would you recommend freeCodeCamp to a friend? </div>
+        <div class="form-group">
+          <div class="container">
+   <input type="radio" value="submit" id="def" name="answer">
+   <label for="def"> Definitely
+   </label>
+   </div>
+     <div class="container">
+   <input type="radio" value="submit" id="may" name="answer">
+   <label for="may"> Maybe
+   </label>
+   </div>
+   <div class="container">
+   <input type="radio" value="submit" id="nots" name="answer">
+   <label for="nots"> Not sure
+   </label> 
+   </div>
+   <div class="question"> What would you like to see improved? (Check all that apply) </div>
+     <div class="container">
+    <input id="frontend" type="checkbox" value="button">
+    <label for="frontend"> Front-end Projects
+    </label>
+    </div>
+   <div class="container">
+     <input id="backend" type="checkbox" value="button">
+     <label for="backend"> Back-end Projects
+     </label>
+     </div>
+    <div class="container">
+      <input id="data" type="checkbox" value="button">
+      <label for="data"> Data Visualization
+      </label>
+      </div>
+      </div>
+      
+     
+
+    <div> Any comments or suggestions? </div>
+    <textarea placeholder="Enter your comment here..."></textarea>
+    <input type="submit" id="submit" value="Submit">
+    </form>
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "beach-bar-order-system",
+  "version": "1.0.0",
+  "description": "Simple order system for beach bar",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}

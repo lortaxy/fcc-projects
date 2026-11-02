@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beach Bar Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Order Your Drinks</h1>
+    <form id="orderForm">
+      <label for="chair">Chair Number (1-10):</label>
+      <input type="number" id="chair" min="1" max="10" required>
+
+      <h2>Select Drinks</h2>
+      <div id="drinksList">
+        <!-- Drinks will be populated by JS -->
+      </div>
+
+      <button type="button" id="addToOrder">Add to Order</button>
+
+      <h2>Your Order</h2>
+      <div id="orderSummary"></div>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" required>
+        <option value="card">Card</option>
+        <option value="cash">Cash</option>
+      </select>
+
+      <button type="submit">Submit Order with Payment Obligation</button>
+    </form>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="customer.js"></script>
+</body>
+</html>
